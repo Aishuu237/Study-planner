@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Study Planner</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <h1><i class="fa-solid fa-book-open"></i> Student Study Planner</h1>
+        <i class="fa-solid fa-moon"></i>
+    </header>
+
+    <!-- Top Cards -->
+    <div class="container">
+
+        <!-- Subject Card -->
+        <div class="card">
+            <h2><i class="fa-solid fa-layer-group"></i> Add Subject</h2>
+
+            <label>Subject Name</label>
+            <input type="text" placeholder="Enter subject name">
+
+            <button>Add Subject</button>
+
+            <h3>Your Subjects</h3>
+
+            <div class="subject-item">📖 Mathematics</div>
+            <div class="subject-item">⚛️ Physics</div>
+            <div class="subject-item">💻 Computer Science</div>
+            <div class="subject-item">🤖 AI & DS</div>
+
+        </div>
+
+        <!-- Task Card -->
+        <div class="card">
+            <h2><i class="fa-solid fa-file-circle-plus"></i> Add Daily Task</h2>
+
+            <label>Select Subject</label>
+            <select>
+                <option>Mathematics</option>
+                <option>Physics</option>
+                <option>Computer Science</option>
+                <option>AI & DS</option>
+            </select>
+
+            <label>Task Name</label>
+            <input type="text" placeholder="Enter task">
+
+            <label>Date</label>
+            <input type="date">
+
+            <button>Add Task</button>
+        </div>
+
+    </div>
+
+    <!-- Tasks Section -->
+
+    <div class="task-card">
+
+        <div class="task-header">
+            <h2>✅ Today's Tasks</h2>
+        </div>
+
+        <div class="task-item">
+            <input type="checkbox">
+            Study DBMS Unit 1
+            <span class="tag">Computer Science</span>
+        </div>
+
+        <div class="task-item">
+            <input type="checkbox" checked>
+            Complete Python Assignment
+            <span class="tag">Mathematics</span>
+        </div>
+
+        <div class="task-item">
+            <input type="checkbox">
+            Revise AI Notes
+            <span class="tag">AI & DS</span>
+        </div>
+
+    </div>
+
+    <!-- Progress Section -->
+
+    <div class="progress-card">
+
+        <h2>📊 Progress Tracker</h2>
+
+        <div class="stats">
+
+            <div class="stat-box">
+                <h3>4</h3>
+                <p>Total Tasks</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>1</h3>
+                <p>Completed</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>3</h3>
+                <p>Remaining</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>25%</h3>
+                <p>Progress</p>
+            </div>
+
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+
+        <p class="msg">🚀 Keep it up! You're making progress.</p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
